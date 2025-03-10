@@ -77,14 +77,15 @@ WSGI_APPLICATION = 'web.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydb',
+        'ENGINE': 'django.db.backends.mysql',  # Make sure this is MySQL
+        'NAME': 'your_db_name',
         'USER': 'root',
         'PASSWORD': '7009',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'HOST': 'localhost',  # or your MySQL server IP
+        'PORT': '3306',  # MySQL default port
     }
 }
+
 
 
 
